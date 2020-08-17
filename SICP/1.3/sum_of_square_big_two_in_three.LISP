@@ -1,0 +1,5 @@
+(define (larger x y) (if (> x y) x y))
+(define (smaller x y) (if (< x y) x y))
+(define (square x) (* x x))
+(define (sum_square_big_two_of_three x y z) (+ (square (larger x y)) (square (larger (smaller x y) z))))
+(sum_square_big_two_of_three 3 2 -5)
